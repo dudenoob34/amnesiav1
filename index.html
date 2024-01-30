@@ -1,61 +1,108 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-	<title>the watching</title>
-	<h1>UPDATE: ok so I got a little bit lazy lol</h1>
-	<script src="https://cdn.logwork.com/widget/countdown.js"></script>
-	<script src="https://cdn.logwork.com/widget/countdown.js"></script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<!-- FONTS -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-	 rel="stylesheet">
-  <!-- Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QR0J225RDB"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Norepted</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap"
+  rel="stylesheet"
+/>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQCTP11KMS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-QR0J225RDB');
+  gtag('config', 'G-ZQCTP11KMS');
 </script>
+<body>
+<div id="particles-js"></div>
+<h1 class="fade-in" id="title">Norepted</h1>
+<h3 class="fade-in">
+  Directions: Paste your youtube video link in the box and press the LAUNCH
+  button.
+</h3>
+<h3 class="fade-in">To exit Norepted, press "0."</h3>
+<h3 class="fade-in">To hide the tab, press "1."</h3>
+<a id="aboutblank" onclick="aboutblank()" class="fade-in"
+  ><button id="aboutblank" class="fade-in">Open in about:blank</button></a
+>
+<h4 class="fade-in" id="copy_tip">
+  To save a video, press the "COPY" button and bookmark the copied link.
+</h4>
+<h4 class="fade-in" id="tip">
+  Shortcut: Press "Enter" on your keyboard to launch faster.
+</h4>
+<br />
+<input class="fade-in" placeholder="Youtube Link Here" id="link" /><br />
+<button class="fade-in" onclick="fix_link()">LAUNCH</button>
+<br />
+<button class="fade-in" id="copy" onclick="copy_link()">COPY</button>
+<h3 class="fade-in">The video will show down below</h3>
+<h5 class="fade-in">(It might take a few seconds, please be patient)</h5>
+<iframe
+  loading
+  class="fade-in"
+  id="video"
+  width="650"
+  height="425"
+  frameborder="0"
+  src=" "
+  allowfullscreen
+></iframe>
+<br />
+<div class="fade-in" id="seperator">
+  <span> -------------------------------------------------- </span>
+</div>
+
+<div id="footer" class="fade-in">
+  <div class="visitor-counter">
+    <script
+      type="text/javascript"
+      src="https://www.stat-counter.org/count/d6u8"
+    ></script>
+    <br />
+  </div>
+  <div class="fade-in">
+    <script
+      type="text/javascript"
+      src="https://www.freevisitorcounters.com/en/home/counter/1086686/t/1"
+    ></script>
+  </div>
+  <div class="fade-in">
+    <a href="https://www.cutercounter.com/" target="_blank"
+      ><img
+        src="https://www.cutercounter.com/hits.php?id=huxoacnd&nd=5&style=1"
+        border="0"
+        alt="website counter"
+      />
+    </a>
+  </div>
+</div>
+
+<h5 class="fade-in" id="socials">
+  Made by the user
+  <a href="https://codepen.io/weaF_z" target="”_blank”"> WG563 on codepen.io </a
+  >, aka
+  <a href="https://github.com/wea-f" target="”_blank”">wea-f on github </a>, aka
+  <a href="https://replit.com/@wea-F" target="”_blank”"> wea-F on replit </a>
+  <br />
+  FOR MORE INFO AND LICENSE, GO
+  <a href="https://github.com/wea-f/Norepted" target="_blank"> HERE </a> <br />
+  <span class="fade-in" id="condition"
+    >!!! I am NOT responsible in anyway if you get in trouble related to
+    Norepted, it is YOUR device and YOU control it. !!!
+  </span>
+</h5>
 </head>
 
-<body>
-	<h1 class="center">YouTube Unbl*cked</h5>
-		<div class=center>
-			<h3>Insert YouTube Link:</h3>
-			<input id="url" type="text" placeholder="" required>
-      <button id="submit" class="submit-button">Watch</button>
-  </div>
-  <br>
-  <div id="instructions" class="center">
-    <hr style="width:25% !important">
-    <h3>About</h3>
-    <p>Use to get around blocks, and watch YouTube without ads and (mostly) tracker free! Just paste in the link and click Watch!</p>
-    <h3>Not Working?</h3>
-    <p>Make sure there isn't anything funky at the end of the link, just the video ID!</p>
-    
-    
-
-    </div>
-	<div id="video-holder-holder">
-		<div id="video-holder" class="center" style="display:none;">
-			<hr>
-			<iframe id="video" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?wmode=transparent&amp;iv_load_policy=3&amp;autoplay=0&amp;html5=1&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=0&amp;theme=light" frameborder="0" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
-		</div>
-	</div>
-  <hr class="space">
-</body>
-    <footer class="center">
-    	<br>
-      <hr>
-    	<p>Made by <a class="linelink" href="https://jcwyt.com" target="_blank">jcwyt.com</a><br>
-		Join our <a class="linelink" href="https://jcwyt.com/discord" target="_blank">Discord Server!</a></p>
-    </footer>
-	<script src="script.js"></script>
-</html>
+<script src="script.js"></script>
+<script
+  rel="preload"
+  src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+></script>
+<script src="particles.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
