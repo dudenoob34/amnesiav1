@@ -1,5 +1,5 @@
-### Use to get around blocked YouTube videos ;)
+we all gotta start somewhere fr fr
 
-Find the finished product [here](https://yt.jcwyt.com).
+oh mabye I should put like an actual descritpion or something uhhh
 
-Credit to DuckDuckGo for some of the `<iframe>` code
+Youtube Unblocker thingamajig
