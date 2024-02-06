@@ -78,4 +78,7 @@ button:active {
     width: 400px;
     height: 225px;
   }
+  h1 {
+    color: rgb(37, 65, 204)
+  }
 }
